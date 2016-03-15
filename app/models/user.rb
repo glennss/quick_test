@@ -20,4 +20,5 @@ class User < ActiveRecord::Base
 
   devise authentication_keys: [:login]
   validates_formatting_of :primary_email, using: :email
+  validates_formatting_of :backup_email, using: :email
 end
